@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.itzamigo.productservice.ProductServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-12T14:24:46" hostname="ITZAMIGO" time="1.596">
+  <properties/>
+  <testcase name="shouldCreateProduct()" classname="com.itzamigo.productservice.ProductServiceApplicationTests" time="1.596"/>
+  <system-out><![CDATA[20:24:36.463 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.itzamigo.productservice.ProductServiceApplicationTests]: ProductServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:24:36.608 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.itzamigo.productservice.ProductServiceApplication for test class com.itzamigo.productservice.ProductServiceApplicationTests
+20:24:36.894 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+20:24:37.154 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+20:24:37.564 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+20:24:37.565 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+20:24:37.599 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 24.0.2
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 6862 MB
+20:24:37.640 [Test worker] INFO tc.testcontainers/ryuk:0.4.0 -- Creating container for image: testcontainers/ryuk:0.4.0
+20:24:37.898 [Test worker] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+20:24:38.027 [Test worker] INFO tc.testcontainers/ryuk:0.4.0 -- Container testcontainers/ryuk:0.4.0 is starting: 8957171f360751891b915491570a41358b1749eb187955830d076541bb9a8409
+20:24:38.610 [Test worker] INFO tc.testcontainers/ryuk:0.4.0 -- Container testcontainers/ryuk:0.4.0 started in PT0.9909964S
+20:24:38.621 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+20:24:38.621 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+20:24:38.622 [Test worker] INFO org.testcontainers.DockerClientFactory -- ?? Docker server version should be at least 1.6.0
+20:24:38.622 [Test worker] INFO tc.mongo:6.0.3 -- Creating container for image: mongo:6.0.3
+20:24:38.673 [Test worker] INFO tc.mongo:6.0.3 -- Container mongo:6.0.3 is starting: 273fea25b7390ffb4bb552b4b84eb915cfb5e102a0cc9798b30e9e89ce59081d
+20:24:39.992 [Test worker] INFO tc.mongo:6.0.3 -- Container mongo:6.0.3 started in PT1.369942S
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-06-12T20:24:43.376+06:00  INFO 18080 --- [    Test worker] c.i.p.ProductServiceApplicationTests     : Starting ProductServiceApplicationTests using Java 19 with PID 18080 (started by Arnur Sovetkali in C:\Users\Arnur Sovetkali\Desktop\Projects\product-service)
+2023-06-12T20:24:43.381+06:00  INFO 18080 --- [    Test worker] c.i.p.ProductServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-06-12T20:24:44.309+06:00  INFO 18080 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-12T20:24:44.378+06:00  INFO 18080 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 MongoDB repository interfaces.
+2023-06-12T20:24:45.111+06:00  INFO 18080 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/19+36-2238"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@c262f2f, com.mongodb.Jep395RecordCodecProvider@5563bb40]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:51390], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-12T20:24:45.166+06:00  INFO 18080 --- [localhost:51390] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:51390, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=71721000, setName='docker-rs', canonicalAddress=273fea25b739:27017, hosts=[273fea25b739:27017], passives=[], arbiters=[], primary='273fea25b739:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=64872aa7156c44b9942b9b64, counter=6}, lastWriteDate=Mon Jun 12 20:24:41 ALMT 2023, lastUpdateTimeNanos=764897527300}
+2023-06-12T20:24:46.233+06:00  INFO 18080 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-06-12T20:24:46.233+06:00  INFO 18080 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-06-12T20:24:46.236+06:00  INFO 18080 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-06-12T20:24:46.280+06:00  INFO 18080 --- [    Test worker] c.i.p.ProductServiceApplicationTests     : Started ProductServiceApplicationTests in 3.284 seconds (process running for 11.689)
+2023-06-12T20:24:47.859+06:00  INFO 18080 --- [    Test worker] c.i.p.service.ProductService             : Product 64872aafe52a6a36a03240f9 is saved
+2023-06-12T20:24:47.971+06:00  INFO 18080 --- [localhost:51390] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:51390
+
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:115) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:735) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:596) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:440) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:397) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:227) ~[mongodb-driver-core-4.9.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159) ~[mongodb-driver-core-4.9.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
